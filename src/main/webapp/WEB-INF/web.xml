@@ -7,9 +7,17 @@
         <servlet-name>oneToOneServlet</servlet-name>
         <servlet-class>com.hibernate.servlet.OneToOneServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>oneToManyServlet</servlet-name>
+        <servlet-class>com.hibernate.servlet.OneToManyServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>oneToOneServlet</servlet-name>
         <url-pattern>/testOneToOne</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>oneToManyServlet</servlet-name>
+        <url-pattern>/testOneToMany</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>welcome.jsp</welcome-file>

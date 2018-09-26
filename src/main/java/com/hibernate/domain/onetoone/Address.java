@@ -1,4 +1,4 @@
-package com.hibernate.domain;
+package com.hibernate.domain.onetoone;
 
 import javax.persistence.*;
 

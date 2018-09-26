@@ -1,13 +1,12 @@
 package com.hibernate.servlet;
 
-import com.hibernate.domain.Address;
-import com.hibernate.domain.Student;
+import com.hibernate.domain.onetoone.Address;
+import com.hibernate.domain.onetoone.Student;
 import com.hibernate.util.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -17,7 +16,7 @@ import java.util.List;
 
 public class OneToOneServlet extends javax.servlet.http.HttpServlet {
 
-    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = null;
@@ -38,8 +37,8 @@ public class OneToOneServlet extends javax.servlet.http.HttpServlet {
 
             transaction.commit();
 
-            out.println("<body text='Red'><h1>Test Output</h1><hr>");
-            List<Student> students = session.createQuery("from com.hibernate.domain.Student").list();
+            out.println("<body text='Red'><h1>Test Output</h1><h4><a href=\"http://localhost:8080\">Go Back</a><h4/> <hr>");
+            List<Student> students = session.createQuery("from com.hibernate.domain.onetoone.Student").list();
             Iterator<Student> iter = students.iterator();
             while (iter.hasNext()) {
                 Student st = iter.next();

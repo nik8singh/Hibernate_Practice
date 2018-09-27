@@ -20,5 +20,7 @@
         <mapping class="com.hibernate.domain.onetomany.Phone"/>
         <mapping class="com.hibernate.domain.manytoone.Category"/>
         <mapping class="com.hibernate.domain.manytoone.Food"/>
+        <mapping class="com.hibernate.domain.manytomany.Jewelry"/>
+        <mapping class="com.hibernate.domain.manytomany.Stone"/>
     </session-factory>
 </hibernate-configuration>

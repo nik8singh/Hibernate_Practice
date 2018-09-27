@@ -15,6 +15,10 @@
         <servlet-name>manyToOneServlet</servlet-name>
         <servlet-class>com.hibernate.servlet.ManyToOneServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>manyToManyServlet</servlet-name>
+        <servlet-class>com.hibernate.servlet.ManyToManyServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>oneToOneServlet</servlet-name>
         <url-pattern>/testOneToOne</url-pattern>
@@ -26,6 +30,10 @@
     <servlet-mapping>
         <servlet-name>manyToOneServlet</servlet-name>
         <url-pattern>/testManyToOne</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>manyToManyServlet</servlet-name>
+        <url-pattern>/testManyToMany</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>welcome.jsp</welcome-file>

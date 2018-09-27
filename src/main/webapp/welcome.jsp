@@ -11,6 +11,7 @@ Hibernate examples:
     <li style="margin-bottom: 10px"><a href="/testOneToOne">Test One To One</a></li>
     <li style="margin-bottom: 10px"><a href="/testOneToMany">Test One To Many</a></li>
     <li style="margin-bottom: 10px"><a href="/testManyToOne">Test Many To One</a></li>
+    <li style="margin-bottom: 10px"><a href="/testManyToMany">Test Many To Many</a></li>
 </ul>
 </body>
 </html>

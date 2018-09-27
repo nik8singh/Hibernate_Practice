@@ -18,5 +18,7 @@
         <mapping class="com.hibernate.domain.onetoone.Address"/>
         <mapping class="com.hibernate.domain.onetomany.Employee"/>
         <mapping class="com.hibernate.domain.onetomany.Phone"/>
+        <mapping class="com.hibernate.domain.manytoone.Category"/>
+        <mapping class="com.hibernate.domain.manytoone.Food"/>
     </session-factory>
 </hibernate-configuration>

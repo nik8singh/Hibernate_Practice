@@ -2,6 +2,7 @@ package com.hibernate.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.classic.Session;
 
 public class HibernateUtil {
     private static final SessionFactory sessionFactory;
@@ -17,5 +18,9 @@ public class HibernateUtil {
 
     public static SessionFactory getSessionFactory() {
         return sessionFactory;
+    }
+
+    public static Session getSession() {
+        return sessionFactory.openSession();
     }
 }
